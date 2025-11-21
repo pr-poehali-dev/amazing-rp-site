@@ -15,7 +15,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900">
+    <div className="min-h-screen bg-gradient-to-br from-black via-red-950 to-black">
       <header className="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-lg border-b border-purple-500/20">
         <nav className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
@@ -119,7 +119,6 @@ const Index = () => {
         {currentPage === 'home' && (
           <>
             <section className="min-h-[80vh] flex items-center justify-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{backgroundImage: "url('https://cdn.poehali.dev/files/3b951e45-22a2-4c48-8b4b-cbc62ff1f02c.jpg')"}}></div>
               <div className="container mx-auto px-4 text-center relative z-10">
                 <h1 className="text-7xl md:text-9xl font-bold mb-6 animate-fade-in">
                   <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-orange-500 bg-clip-text text-transparent">
@@ -132,6 +131,7 @@ const Index = () => {
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-6 text-lg animate-scale-in"
+                  onClick={() => window.open('https://drive.google.com/file/d/1C_Y_ZdS3SICR4V_1bK6qQNl-VHOn6gZg/view?usp=sharing', '_blank')}
                 >
                   Начать играть
                 </Button>
@@ -254,15 +254,26 @@ const Index = () => {
             </div>
             <div>
               <h4 className="text-xl font-bold text-white mb-4">Ссылки</h4>
-              <a
-                href="https://t.me/zamcrmp"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors"
-              >
-                <Icon name="Send" size={20} />
-                <span>Telegram канал зам владельца</span>
-              </a>
+              <div className="flex flex-col gap-3">
+                <a
+                  href="https://t.me/zamcrmp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors"
+                >
+                  <Icon name="Send" size={20} />
+                  <span>Telegram канал зам владельца</span>
+                </a>
+                <a
+                  href="https://t.me/amazingcopy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors"
+                >
+                  <Icon name="Send" size={20} />
+                  <span>Телеграмм канал проекта</span>
+                </a>
+              </div>
             </div>
           </div>
           <div className="border-t border-purple-500/20 pt-8 text-center text-gray-400">
