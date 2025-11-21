@@ -20,7 +20,7 @@ const Index = () => {
         <nav className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
-              AMAZING RP
+              AMAZING RP Копия
             </div>
             <div className="hidden md:flex gap-8">
               <button
