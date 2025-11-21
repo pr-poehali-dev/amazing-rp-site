@@ -8,12 +8,10 @@ const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const galleryImages = [
-    'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800',
-    'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800',
-    'https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800',
-    'https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=800',
-    'https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800',
-    'https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?w=800'
+    'https://cdn.poehali.dev/files/bbf71801-d484-428b-96da-cee6e739f61e.jpg',
+    'https://cdn.poehali.dev/files/d1919b23-a4b9-4caf-a1b7-a198e029960c.jpg',
+    'https://cdn.poehali.dev/files/c3a6b953-fde2-42e5-9a53-46a7199b380b.jpg',
+    'https://cdn.poehali.dev/files/fd46c4a3-ed10-4605-8d9b-a9df0b5375e8.jpg'
   ];
 
   return (
@@ -121,7 +119,7 @@ const Index = () => {
         {currentPage === 'home' && (
           <>
             <section className="min-h-[80vh] flex items-center justify-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1920')] bg-cover bg-center opacity-20"></div>
+              <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{backgroundImage: "url('https://cdn.poehali.dev/files/3b951e45-22a2-4c48-8b4b-cbc62ff1f02c.jpg')"}}></div>
               <div className="container mx-auto px-4 text-center relative z-10">
                 <h1 className="text-7xl md:text-9xl font-bold mb-6 animate-fade-in">
                   <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-orange-500 bg-clip-text text-transparent">
